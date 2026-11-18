@@ -36,7 +36,7 @@ export class AuthService {
     const actual = scryptSync(data.password, salt, 64);
     const saved = Buffer.from(expected, 'hex');
     if (!user || user.active !== 1 || saved.length !== actual.length || !timingSafeEqual(actual, saved)) throw new UnauthorizedException('Invalid email or password');
-    const token = jwt.sign({ sub: user.id }, process.env.SESSION_SECRET!, { algorithm: 'HS256', expiresIn: '8h' });
+    const token = jwt.sign({ sub: user.id, sessionVersion: user.session_version }, process.env.SESSION_SECRET!, { algorithm: 'HS256', expiresIn: '8h' });
     return { token, user: this.publicUser(user) };
   }
 
@@ -44,15 +44,19 @@ export class AuthService {
   authenticate(authorization: string | undefined): AuthUser {
     if (!this.enabled() || !authorization || !/^Bearer [^\s]+$/.test(authorization)) throw new UnauthorizedException();
     let subject: string | undefined;
+    let sessionVersion: number | undefined;
     try {
       const payload = jwt.verify(authorization.slice(7), process.env.SESSION_SECRET!, { algorithms: ['HS256'] });
-      if (typeof payload !== 'string' && typeof payload.sub === 'string') subject = payload.sub;
+      if (typeof payload !== 'string' && typeof payload.sub === 'string') {
+        subject = payload.sub;
+        sessionVersion = payload.sessionVersion === undefined ? 0 : payload.sessionVersion;
+      }
     } catch {
       throw new UnauthorizedException();
     }
     if (!subject) throw new UnauthorizedException();
     const user = this.database.db.prepare('SELECT * FROM users WHERE id = ?').get(subject) as unknown as UserRecord | undefined;
-    if (!user || user.active !== 1) throw new UnauthorizedException();
+    if (!user || user.active !== 1 || sessionVersion !== user.session_version) throw new UnauthorizedException();
     return this.publicUser(user);
   }
 }

@@ -47,7 +47,7 @@ afterAll(async () => { await app?.close(); rmSync(directory, { recursive: true, 
 
 describe('inventory API', () => {
   it('migrates version 1 without losing identity and assignment data', () => {
-    expect(db.db.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 2 });
+    expect(db.db.prepare('PRAGMA user_version').get()).toMatchObject({ user_version: 3 });
     expect(db.db.prepare('SELECT role FROM users WHERE id = ?').get('reader')).toMatchObject({ role: 'viewer' });
     expect(db.db.prepare('SELECT segment_id FROM user_segments WHERE user_id = ?').get('reader')).toMatchObject({ segment_id: 'seg-a' });
   });

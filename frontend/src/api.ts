@@ -2,6 +2,8 @@
 export interface User { id: string; email: string; role: string; segments: string[] }
 export interface Session { token: string; user: User }
 export interface Segment { id: string; name: string }
+export interface ManagedUser extends User { active: boolean }
+export interface UserAudit { id: number; actorId: string; targetId: string; occurredAt: string; oldValues: ManagedUser | null; newValues: ManagedUser }
 export interface Application { id: string; name: string; segmentId: string; owner: string; lifecycle: string; criticality: string; qualityScore: number | null }
 const base = import.meta.env.VITE_API_BASE_URL || '';
 

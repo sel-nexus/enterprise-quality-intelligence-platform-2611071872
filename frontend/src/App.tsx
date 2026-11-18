@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Login from './auth/Login';
 import Inventory from './inventory/Inventory';
+import Users from './users/Users';
 import { currentUser } from './api';
 import type { Session, User } from './api';
 
@@ -68,6 +69,7 @@ export default function App() {
         </dl>
         <p className="notice">Development identity is active. Reporting is not yet available.</p>
         <Inventory token={token} user={user} />
+        {user.role === 'admin' && <Users token={token} />}
       </main>
     </div>
   );

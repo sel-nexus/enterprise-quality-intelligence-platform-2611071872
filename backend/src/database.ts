@@ -13,6 +13,7 @@ export interface UserRecord {
   role: string;
   active: number;
   password_hash: string;
+  session_version: number;
 }
 
 /** Own the SQLite connection and initialize the development administrator once. */
@@ -26,7 +27,7 @@ export class Database implements OnModuleDestroy {
     this.db = new DatabaseSync(path);
     this.db.exec('PRAGMA foreign_keys = ON;');
     const version = this.db.prepare('PRAGMA user_version').get() as { user_version: number };
-    if (version.user_version > 2) throw new Error('Database schema is newer than this application');
+    if (version.user_version > 3) throw new Error('Database schema is newer than this application');
     if (version.user_version === 0) {
       this.db.exec(`BEGIN;
         CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, role TEXT NOT NULL, active INTEGER NOT NULL DEFAULT 1, password_hash TEXT NOT NULL);
@@ -40,6 +41,13 @@ export class Database implements OnModuleDestroy {
         CREATE TABLE applications (id TEXT PRIMARY KEY, name TEXT NOT NULL, segment_id TEXT NOT NULL REFERENCES segments(id), owner TEXT NOT NULL, lifecycle TEXT NOT NULL, criticality TEXT NOT NULL, quality_score REAL CHECK (quality_score IS NULL OR (quality_score >= 0 AND quality_score <= 100)));
         CREATE INDEX applications_segment_idx ON applications(segment_id);
         PRAGMA user_version = 2;
+        COMMIT;`);
+    }
+    if (version.user_version < 3) {
+      this.db.exec(`BEGIN;
+        ALTER TABLE users ADD COLUMN session_version INTEGER NOT NULL DEFAULT 0;
+        CREATE TABLE user_audit (id INTEGER PRIMARY KEY, actor_id TEXT NOT NULL, target_id TEXT NOT NULL, occurred_at TEXT NOT NULL, old_values TEXT, new_values TEXT NOT NULL);
+        PRAGMA user_version = 3;
         COMMIT;`);
     }
     if (process.env.NODE_ENV !== 'production' && process.env.DEV_LOGIN_ENABLED === 'true') {
