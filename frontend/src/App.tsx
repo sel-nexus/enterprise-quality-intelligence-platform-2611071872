@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Login from './auth/Login';
 import Inventory from './inventory/Inventory';
 import Users from './users/Users';
+import Overview from './reports/Overview';
 import { currentUser } from './api';
 import type { Session, User } from './api';
 
@@ -67,7 +68,8 @@ export default function App() {
           <div><dt>Access role</dt><dd>{user.role}</dd></div>
           <div><dt>Access scope</dt><dd>{user.role === 'admin' || user.role === 'executive' ? 'Enterprise-wide' : user.segments.length ? `Assigned: ${user.segments.join(', ')}` : 'No segments assigned'}</dd></div>
         </dl>
-        <p className="notice">Development identity is active. Reporting is not yet available.</p>
+        <p className="notice">Development identity is active.</p>
+        <Overview token={token} user={user} />
         <Inventory token={token} user={user} />
         {user.role === 'admin' && <Users token={token} />}
       </main>

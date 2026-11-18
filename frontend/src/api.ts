@@ -5,7 +5,18 @@ export interface Segment { id: string; name: string }
 export interface ManagedUser extends User { active: boolean }
 export interface UserAudit { id: number; actorId: string; targetId: string; occurredAt: string; oldValues: ManagedUser | null; newValues: ManagedUser }
 export interface Application { id: string; name: string; segmentId: string; owner: string; lifecycle: string; criticality: string; qualityScore: number | null }
+export interface OverviewReport { segmentCount: number; applicationCount: number; scoredApplicationCount: number; unknownScoreCount: number; segments: { id: string; name: string; applicationCount: number }[] }
 const base = import.meta.env.VITE_API_BASE_URL || '';
+
+/** Fetch an authorized CSV as a download rather than exposing the session in a URL. */
+export async function downloadApplicationsCsv(token: string): Promise<Blob> {
+  const response = await fetch(`${base}/api/v1/reports/applications.csv`, { headers: { Authorization: `Bearer ${token}` } });
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null) as { message?: string } | null;
+    throw new Error(typeof payload?.message === 'string' ? payload.message : `Export failed (${response.status})`);
+  }
+  return response.blob();
+}
 
 /** Send an authenticated inventory request and expose actionable server errors. */
 export async function inventoryRequest<T>(token: string, path: string, method = 'GET', body?: unknown): Promise<T> {
