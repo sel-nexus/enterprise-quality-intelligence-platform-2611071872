@@ -1690,15 +1690,6 @@
       "community": 3
     },
     {
-      "id": "backend_test_auth_spec_directory",
-      "label": "directory",
-      "file_type": "code",
-      "source_file": "backend/test/auth.spec.ts",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 3
-    },
-    {
       "id": "backend_test_auth_spec_credentials",
       "label": "credentials",
       "file_type": "code",
@@ -1706,6 +1697,31 @@
       "source_location": "L18",
       "_origin": "ast",
       "community": 3
+    },
+    {
+      "id": "backend_test_integration_spec",
+      "label": "integration.spec.ts",
+      "file_type": "code",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_test_integration_spec_auth",
+      "label": "auth()",
+      "file_type": "code",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_test_integration_spec_credentials",
+      "label": "credentials",
+      "file_type": "code",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L18",
+      "_origin": "ast"
     },
     {
       "id": "backend_test_inventory_spec",
@@ -1721,14 +1737,6 @@
       "file_type": "code",
       "source_file": "backend/test/inventory.spec.ts",
       "source_location": "L13",
-      "_origin": "ast"
-    },
-    {
-      "id": "backend_test_inventory_spec_directory",
-      "label": "directory",
-      "file_type": "code",
-      "source_file": "backend/test/inventory.spec.ts",
-      "source_location": "L15",
       "_origin": "ast"
     },
     {
@@ -1789,14 +1797,6 @@
       "file_type": "code",
       "source_file": "backend/test/users.spec.ts",
       "source_location": "L1",
-      "_origin": "ast"
-    },
-    {
-      "id": "backend_test_users_spec_directory",
-      "label": "directory",
-      "file_type": "code",
-      "source_file": "backend/test/users.spec.ts",
-      "source_location": "L14",
       "_origin": "ast"
     },
     {
@@ -1960,6 +1960,14 @@
       "community": 5
     },
     {
+      "id": "frontend_e2e_access_spec",
+      "label": "access.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/access.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_e2e_auth_spec",
       "label": "auth.spec.ts",
       "file_type": "code",
@@ -1967,6 +1975,32 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 1
+    },
+    {
+      "id": "frontend_e2e_fixtures",
+      "label": "fixtures.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/fixtures.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_fixtures_test",
+      "label": "test",
+      "file_type": "code",
+      "source_file": "frontend/e2e/fixtures.ts",
+      "source_location": "L6",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "on",
+            "receiver_type": "Page",
+            "lang": "typescript",
+            "line": "L13"
+          }
+        ]
+      },
+      "_origin": "ast"
     },
     {
       "id": "frontend_e2e_inventory_spec",
@@ -2360,6 +2394,65 @@
       "community": 1
     },
     {
+      "id": "frontend_playwright_config_databasepath",
+      "label": "databasePath",
+      "file_type": "code",
+      "source_file": "frontend/playwright.config.ts",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight",
+      "label": "preflight.cjs",
+      "file_type": "code",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight_chromium",
+      "label": "{ chromium }",
+      "file_type": "code",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight_fs",
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_api_test",
+      "label": "api.test.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L1",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "readAsText",
+            "receiver_type": "FileReader",
+            "lang": "typescript",
+            "line": "L48"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_api_test_json",
+      "label": "json()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L5",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_api",
       "label": "api.ts",
       "file_type": "code",
@@ -2477,6 +2570,31 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4
+    },
+    {
+      "id": "frontend_src_app_test",
+      "label": "App.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_test_viewer",
+      "label": "viewer",
+      "file_type": "code",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_app_test_json",
+      "label": "json()",
+      "file_type": "code",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
     },
     {
       "id": "frontend_src_app",
@@ -2638,7 +2756,7 @@
       "label": "createSegment()",
       "file_type": "code",
       "source_file": "frontend/src/inventory/Inventory.tsx",
-      "source_location": "L40",
+      "source_location": "L42",
       "_callable": true,
       "metadata": {
         "unresolved_calls": [
@@ -2646,7 +2764,7 @@
             "callee": "preventDefault",
             "receiver_type": "FormEvent",
             "lang": "typescript",
-            "line": "L41"
+            "line": "L43"
           }
         ]
       },
@@ -2657,7 +2775,7 @@
       "label": "createApplication()",
       "file_type": "code",
       "source_file": "frontend/src/inventory/Inventory.tsx",
-      "source_location": "L50",
+      "source_location": "L52",
       "_callable": true,
       "metadata": {
         "unresolved_calls": [
@@ -2665,7 +2783,45 @@
             "callee": "preventDefault",
             "receiver_type": "FormEvent",
             "lang": "typescript",
-            "line": "L51"
+            "line": "L53"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_inventory_inventory_inventory_updatesegment",
+      "label": "updateSegment()",
+      "file_type": "code",
+      "source_file": "frontend/src/inventory/Inventory.tsx",
+      "source_location": "L62",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "preventDefault",
+            "receiver_type": "FormEvent",
+            "lang": "typescript",
+            "line": "L63"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_inventory_inventory_inventory_updateapplication",
+      "label": "updateApplication()",
+      "file_type": "code",
+      "source_file": "frontend/src/inventory/Inventory.tsx",
+      "source_location": "L75",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "preventDefault",
+            "receiver_type": "FormEvent",
+            "lang": "typescript",
+            "line": "L76"
           }
         ]
       },
@@ -2686,6 +2842,16 @@
       "file_type": "code",
       "source_file": "frontend/src/reports/Overview.test.tsx",
       "source_location": "L1",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "readAsText",
+            "receiver_type": "FileReader",
+            "lang": "typescript",
+            "line": "L61"
+          }
+        ]
+      },
       "_origin": "ast"
     },
     {
@@ -6343,21 +6509,131 @@
     },
     {
       "source": "backend_test_auth_spec",
-      "target": "backend_test_auth_spec_directory",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/test/auth.spec.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "backend_test_auth_spec",
       "target": "backend_test_auth_spec_credentials",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/auth.spec.ts",
       "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "ref_reflect_metadata",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "ref_nestjs_testing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "ref_nestjs_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "ref_supertest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_src_app_module",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_src_app_module_appmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_src_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_src_database_database",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_test_integration_spec_auth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_test_integration_spec_credentials",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_integration_spec",
+      "target": "backend_test_integration_spec_auth",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/integration.spec.ts",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6473,16 +6749,6 @@
     },
     {
       "source": "backend_test_inventory_spec",
-      "target": "backend_test_inventory_spec_directory",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/test/inventory.spec.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "backend_test_inventory_spec",
       "target": "backend_test_inventory_spec_headers",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6508,7 +6774,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/inventory.spec.ts",
-      "source_location": "L60",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6786,16 +7052,6 @@
     },
     {
       "source": "backend_test_users_spec",
-      "target": "backend_test_users_spec_directory",
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/test/users.spec.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "backend_test_users_spec",
       "target": "backend_test_users_spec_credentials",
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6831,7 +7087,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/test/users.spec.ts",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6976,8 +7232,30 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_access_spec",
+      "target": "frontend_e2e_fixtures",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/access.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_access_spec",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/access.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_auth_spec",
-      "target": "ref_playwright_test",
+      "target": "frontend_e2e_fixtures",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6987,8 +7265,52 @@
       "_origin": "ast"
     },
     {
-      "source": "frontend_e2e_inventory_spec",
+      "source": "frontend_e2e_auth_spec",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/auth.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_fixtures",
       "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/fixtures.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_fixtures",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/fixtures.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_fixtures",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/fixtures.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_inventory_spec",
+      "target": "frontend_e2e_fixtures",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6998,8 +7320,19 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_inventory_spec",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/inventory.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_overview_spec",
-      "target": "ref_playwright_test",
+      "target": "frontend_e2e_fixtures",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7009,9 +7342,31 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_e2e_overview_spec",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/overview.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_e2e_users_spec",
-      "target": "ref_playwright_test",
+      "target": "frontend_e2e_fixtures",
       "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/users.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_users_spec",
+      "target": "frontend_e2e_fixtures_test",
+      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/e2e/users.spec.ts",
@@ -7435,6 +7790,123 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_playwright_config",
+      "target": "frontend_playwright_config_databasepath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/playwright.config.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "frontend_preflight_chromium",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "frontend_preflight_fs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.cjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_currentuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_downloadapplicationscsv",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_inventoryrequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_login",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_test_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api_test",
+      "target": "frontend_src_api_test_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.test.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_api",
       "target": "frontend_src_api_user",
       "relation": "contains",
@@ -7541,6 +8013,92 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/api.ts",
       "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "frontend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "frontend_src_app_test_viewer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "frontend_src_app_test_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_test",
+      "target": "frontend_src_app_test_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7951,7 +8509,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/inventory/Inventory.test.tsx",
-      "source_location": "L17",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8061,7 +8619,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/inventory/Inventory.tsx",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8071,7 +8629,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/inventory/Inventory.tsx",
-      "source_location": "L50",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_inventory_inventory_inventory",
+      "target": "frontend_src_inventory_inventory_inventory_updatesegment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/inventory/Inventory.tsx",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_inventory_inventory_inventory",
+      "target": "frontend_src_inventory_inventory_inventory_updateapplication",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/inventory/Inventory.tsx",
+      "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8714,6 +9292,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app_test",
+      "target": "frontend_src_app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app",
       "target": "frontend_src_auth_login_login",
       "relation": "imports",
@@ -8841,7 +9430,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/inventory/Inventory.tsx",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9491,7 +10080,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L53",
+      "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9503,7 +10092,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L72",
+      "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9515,7 +10104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L73",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9527,7 +10116,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L74",
+      "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9765,7 +10354,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -9951,8 +10540,8 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_audit",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_users_users_controller_userscontroller_audit"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -9964,8 +10553,8 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_create",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_users_users_controller_userscontroller_create"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -9977,8 +10566,8 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_list",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_users_users_controller_userscontroller_list"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -9990,7 +10579,33 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_update",
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_users_users_controller_userscontroller_update"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_overview",
       "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
     },
     {
@@ -10107,8 +10722,8 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_admin",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_admin"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -10120,8 +10735,8 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_audit",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_audit"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -10133,8 +10748,8 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_create",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_create"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -10146,8 +10761,8 @@
       "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_history",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_history"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -10159,8 +10774,8 @@
       "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_list",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_list"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -10172,7 +10787,33 @@
       "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_update",
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_users_users_service_usersservice_update"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_reports_reports_service_reportsservice_overview",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_service_reportsservice_overview",
       "_tgt": "backend_src_auth_auth_service_authuser"
     },
     {
@@ -10198,8 +10839,8 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_publicuser",
-      "_tgt": "backend_src_database_userrecord"
+      "_src": "backend_src_database_userrecord",
+      "_tgt": "backend_src_users_users_service_usersservice_publicuser"
     },
     {
       "source": "backend_src_database_database",
@@ -10224,8 +10865,8 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_constructor",
-      "_tgt": "backend_src_database_database"
+      "_src": "backend_src_database_database",
+      "_tgt": "backend_src_users_users_service_usersservice_constructor"
     },
     {
       "source": "backend_src_inventory_inventory_controller_ts_inject",
@@ -10475,6 +11116,19 @@
       "_tgt": "backend_src_inventory_inventory_controller_ts_param"
     },
     {
+      "source": "backend_src_inventory_inventory_service_inventoryservice",
+      "target": "backend_src_reports_reports_service_reportsservice_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_service_reportsservice_constructor",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice"
+    },
+    {
       "source": "backend_src_inventory_inventory_service_ts_inject",
       "target": "backend_src_inventory_inventory_service_inventoryservice_constructor",
       "relation": "references",
@@ -10488,6 +11142,97 @@
       "_tgt": "backend_src_inventory_inventory_service_ts_inject"
     },
     {
+      "source": "backend_src_reports_reports_controller_ts_inject",
+      "target": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "_tgt": "backend_src_reports_reports_controller_ts_inject"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_ts_get",
+      "target": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "_tgt": "backend_src_reports_reports_controller_ts_get"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_ts_get",
+      "target": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "_tgt": "backend_src_reports_reports_controller_ts_get"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_ts_req",
+      "target": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "_tgt": "backend_src_reports_reports_controller_ts_req"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_ts_req",
+      "target": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "_tgt": "backend_src_reports_reports_controller_ts_req"
+    },
+    {
+      "source": "header",
+      "target": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "_tgt": "header"
+    },
+    {
+      "source": "backend_src_reports_reports_service_ts_inject",
+      "target": "backend_src_reports_reports_service_reportsservice_constructor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_reports_reports_service_reportsservice_constructor",
+      "_tgt": "backend_src_reports_reports_service_ts_inject"
+    },
+    {
       "source": "backend_src_users_users_controller_ts_inject",
       "target": "backend_src_users_users_controller_userscontroller_constructor",
       "relation": "references",
@@ -10497,8 +11242,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_constructor",
-      "_tgt": "backend_src_users_users_controller_ts_inject"
+      "_src": "backend_src_users_users_controller_ts_inject",
+      "_tgt": "backend_src_users_users_controller_userscontroller_constructor"
     },
     {
       "source": "backend_src_users_users_controller_ts_get",
@@ -10510,8 +11255,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_audit",
-      "_tgt": "backend_src_users_users_controller_ts_get"
+      "_src": "backend_src_users_users_controller_ts_get",
+      "_tgt": "backend_src_users_users_controller_userscontroller_audit"
     },
     {
       "source": "backend_src_users_users_controller_ts_get",
@@ -10523,8 +11268,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_list",
-      "_tgt": "backend_src_users_users_controller_ts_get"
+      "_src": "backend_src_users_users_controller_ts_get",
+      "_tgt": "backend_src_users_users_controller_userscontroller_list"
     },
     {
       "source": "backend_src_users_users_controller_ts_req",
@@ -10536,8 +11281,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_audit",
-      "_tgt": "backend_src_users_users_controller_ts_req"
+      "_src": "backend_src_users_users_controller_ts_req",
+      "_tgt": "backend_src_users_users_controller_userscontroller_audit"
     },
     {
       "source": "backend_src_users_users_controller_ts_req",
@@ -10549,8 +11294,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_create",
-      "_tgt": "backend_src_users_users_controller_ts_req"
+      "_src": "backend_src_users_users_controller_ts_req",
+      "_tgt": "backend_src_users_users_controller_userscontroller_create"
     },
     {
       "source": "backend_src_users_users_controller_ts_req",
@@ -10562,8 +11307,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_list",
-      "_tgt": "backend_src_users_users_controller_ts_req"
+      "_src": "backend_src_users_users_controller_ts_req",
+      "_tgt": "backend_src_users_users_controller_userscontroller_list"
     },
     {
       "source": "backend_src_users_users_controller_ts_req",
@@ -10575,8 +11320,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_update",
-      "_tgt": "backend_src_users_users_controller_ts_req"
+      "_src": "backend_src_users_users_controller_ts_req",
+      "_tgt": "backend_src_users_users_controller_userscontroller_update"
     },
     {
       "source": "backend_src_users_users_controller_ts_post",
@@ -10588,8 +11333,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_create",
-      "_tgt": "backend_src_users_users_controller_ts_post"
+      "_src": "backend_src_users_users_controller_ts_post",
+      "_tgt": "backend_src_users_users_controller_userscontroller_create"
     },
     {
       "source": "backend_src_users_users_controller_ts_body",
@@ -10601,8 +11346,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_create",
-      "_tgt": "backend_src_users_users_controller_ts_body"
+      "_src": "backend_src_users_users_controller_ts_body",
+      "_tgt": "backend_src_users_users_controller_userscontroller_create"
     },
     {
       "source": "backend_src_users_users_controller_ts_body",
@@ -10614,8 +11359,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_update",
-      "_tgt": "backend_src_users_users_controller_ts_body"
+      "_src": "backend_src_users_users_controller_ts_body",
+      "_tgt": "backend_src_users_users_controller_userscontroller_update"
     },
     {
       "source": "backend_src_users_users_controller_ts_patch",
@@ -10627,8 +11372,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_update",
-      "_tgt": "backend_src_users_users_controller_ts_patch"
+      "_src": "backend_src_users_users_controller_ts_patch",
+      "_tgt": "backend_src_users_users_controller_userscontroller_update"
     },
     {
       "source": "backend_src_users_users_controller_ts_param",
@@ -10640,8 +11385,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_controller_userscontroller_update",
-      "_tgt": "backend_src_users_users_controller_ts_param"
+      "_src": "backend_src_users_users_controller_ts_param",
+      "_tgt": "backend_src_users_users_controller_userscontroller_update"
     },
     {
       "source": "backend_src_users_users_service_ts_inject",
@@ -10653,8 +11398,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_src_users_users_service_usersservice_constructor",
-      "_tgt": "backend_src_users_users_service_ts_inject"
+      "_src": "backend_src_users_users_service_ts_inject",
+      "_tgt": "backend_src_users_users_service_usersservice_constructor"
     },
     {
       "source": "frontend_src_api_session",
@@ -10672,10 +11417,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T13:00:40.324981+00:00",
+    "built_at": "2026-11-18T13:46:35.331729+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000418112611071872\\developer",
     "force": true,
-    "files_scanned": 39
+    "files_scanned": 45
   }
 }
