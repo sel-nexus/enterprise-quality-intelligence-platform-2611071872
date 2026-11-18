@@ -26,12 +26,20 @@ export class Database implements OnModuleDestroy {
     this.db = new DatabaseSync(path);
     this.db.exec('PRAGMA foreign_keys = ON;');
     const version = this.db.prepare('PRAGMA user_version').get() as { user_version: number };
-    if (version.user_version > 1) throw new Error('Database schema is newer than this application');
+    if (version.user_version > 2) throw new Error('Database schema is newer than this application');
     if (version.user_version === 0) {
       this.db.exec(`BEGIN;
         CREATE TABLE users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, role TEXT NOT NULL, active INTEGER NOT NULL DEFAULT 1, password_hash TEXT NOT NULL);
         CREATE TABLE user_segments (user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE, segment_id TEXT NOT NULL, PRIMARY KEY (user_id, segment_id));
         PRAGMA user_version = 1;
+        COMMIT;`);
+    }
+    if (version.user_version < 2) {
+      this.db.exec(`BEGIN;
+        CREATE TABLE segments (id TEXT PRIMARY KEY, name TEXT NOT NULL);
+        CREATE TABLE applications (id TEXT PRIMARY KEY, name TEXT NOT NULL, segment_id TEXT NOT NULL REFERENCES segments(id), owner TEXT NOT NULL, lifecycle TEXT NOT NULL, criticality TEXT NOT NULL, quality_score REAL CHECK (quality_score IS NULL OR (quality_score >= 0 AND quality_score <= 100)));
+        CREATE INDEX applications_segment_idx ON applications(segment_id);
+        PRAGMA user_version = 2;
         COMMIT;`);
     }
     if (process.env.NODE_ENV !== 'production' && process.env.DEV_LOGIN_ENABLED === 'true') {

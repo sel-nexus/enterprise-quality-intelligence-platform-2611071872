@@ -1,6 +1,7 @@
 /** Render the authenticated shell or the development login. */
 import { useEffect, useState } from 'react';
 import Login from './auth/Login';
+import Inventory from './inventory/Inventory';
 import { currentUser } from './api';
 import type { Session, User } from './api';
 
@@ -63,9 +64,10 @@ export default function App() {
         <p>Signed in as <strong>{user.email}</strong></p>
         <dl>
           <div><dt>Access role</dt><dd>{user.role}</dd></div>
-          <div><dt>Assigned segments</dt><dd>{user.segments.length ? user.segments.join(', ') : 'None assigned'}</dd></div>
+          <div><dt>Access scope</dt><dd>{user.role === 'admin' || user.role === 'executive' ? 'Enterprise-wide' : user.segments.length ? `Assigned: ${user.segments.join(', ')}` : 'No segments assigned'}</dd></div>
         </dl>
-        <p className="notice">Development identity is active. Inventory and reporting are not yet available.</p>
+        <p className="notice">Development identity is active. Reporting is not yet available.</p>
+        <Inventory token={token} user={user} />
       </main>
     </div>
   );

@@ -4,6 +4,8 @@ import { Database } from './database';
 import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { AuthGuard } from './auth/auth.guard';
+import { InventoryController } from './inventory/inventory.controller';
+import { InventoryService } from './inventory/inventory.service';
 
 /** Report process liveness without requiring credentials. */
 @Controller('api')
@@ -14,5 +16,5 @@ export class HealthController {
 }
 
 /** Register identity providers for this application. */
-@Module({ controllers: [HealthController, AuthController], providers: [Database, AuthService, AuthGuard] })
+@Module({ controllers: [HealthController, AuthController, InventoryController], providers: [Database, AuthService, AuthGuard, InventoryService] })
 export class AppModule {}

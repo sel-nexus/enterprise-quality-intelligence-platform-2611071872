@@ -1,7 +1,19 @@
 /** Communicate with the same-origin identity API. */
 export interface User { id: string; email: string; role: string; segments: string[] }
 export interface Session { token: string; user: User }
+export interface Segment { id: string; name: string }
+export interface Application { id: string; name: string; segmentId: string; owner: string; lifecycle: string; criticality: string; qualityScore: number | null }
 const base = import.meta.env.VITE_API_BASE_URL || '';
+
+/** Send an authenticated inventory request and expose actionable server errors. */
+export async function inventoryRequest<T>(token: string, path: string, method = 'GET', body?: unknown): Promise<T> {
+  const response = await fetch(`${base}/api/v1/${path}`, { method, headers: { Authorization: `Bearer ${token}`, ...(body === undefined ? {} : { 'Content-Type': 'application/json' }) }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null) as { message?: string } | null;
+    throw new Error(typeof payload?.message === 'string' ? payload.message : `Request failed (${response.status})`);
+  }
+  return response.json() as Promise<T>;
+}
 
 /** Exchange credentials for a development session. */
 export async function login(email: string, password: string): Promise<Session> {

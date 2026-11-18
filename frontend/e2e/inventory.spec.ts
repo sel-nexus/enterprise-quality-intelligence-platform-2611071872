@@ -1,0 +1,41 @@
+/** Verify the inventory creation and persistence journey against live services. */
+import { expect, test } from '@playwright/test';
+
+test('creates and searches real inventory after signing in', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+  page.on('requestfailed', request => errors.push(`${request.url()}: ${request.failure()?.errorText}`));
+  const suffix = `${Date.now()}${Math.floor(Math.random() * 100000)}`;
+  const segmentId = `seg-${suffix}`;
+  const appId = `app-${suffix}`;
+  await page.goto('/');
+  await page.getByLabel('Email').fill(process.env.E2E_EMAIL || 'admin@example.test');
+  await page.getByLabel('Password').fill(process.env.E2E_PASSWORD || 'local-development-password');
+  await page.getByRole('button', { name: 'Sign in' }).click();
+  await expect(page.getByText('Enterprise-wide inventory access.')).toBeVisible();
+  await page.getByLabel('Segment ID').fill(segmentId);
+  await page.getByLabel('Segment name').fill(`Segment ${suffix}`);
+  const segmentResponse = page.waitForResponse(response => response.url().endsWith('/api/v1/segments') && response.request().method() === 'POST');
+  await page.getByRole('button', { name: 'Create segment' }).click();
+  const segment = await segmentResponse;
+  expect(segment.status()).toBe(201);
+  expect((await segment.json()).id).toBe(segmentId);
+  await page.getByLabel('Application ID').fill(appId);
+  await page.getByLabel('Application name').fill(`Claims ${suffix}`);
+  await page.getByLabel('Application segment').selectOption(segmentId);
+  await page.getByLabel('Owner').fill('Quality team');
+  await page.getByLabel('Lifecycle').fill('Active');
+  await page.getByLabel('Criticality').fill('High');
+  const applicationResponse = page.waitForResponse(response => response.url().endsWith('/api/v1/applications') && response.request().method() === 'POST');
+  await page.getByRole('button', { name: 'Create application' }).click();
+  const application = await applicationResponse;
+  expect(application.status()).toBe(201);
+  expect((await application.json()).id).toBe(appId);
+  await expect(page.getByText(`Claims ${suffix}`)).toBeVisible();
+  await page.reload();
+  await page.getByLabel('Search applications').fill(appId);
+  await expect(page.getByText(`Claims ${suffix}`)).toBeVisible();
+  await expect(page.getByText(/Quality score: Unavailable/).filter({ hasText: appId })).toBeVisible();
+  expect(errors).toEqual([]);
+});
