@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      NODE_ENV: development
+      DEV_LOGIN_ENABLED: "true"
+      DEV_ADMIN_EMAIL: ${DEV_ADMIN_EMAIL:-admin@example.test}
+      DEV_ADMIN_PASSWORD: ${DEV_ADMIN_PASSWORD:-local-development-password}
+      SESSION_SECRET: ${SESSION_SECRET:-development-only-secret-change-this-32bytes}
+      DATABASE_PATH: /data/eqip.sqlite
+      PORT: "3000"
+    volumes:
+      - eqip-data:/data
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+volumes:
+  eqip-data:
