@@ -1,11 +1,8 @@
 /** Verify the inventory creation and persistence journey against live services. */
-import { expect, test } from '@playwright/test';
+import { expect, test } from './fixtures';
 
 test('creates and searches real inventory after signing in', async ({ page }) => {
-  const errors: string[] = [];
-  page.on('pageerror', error => errors.push(error.message));
-  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
-  page.on('requestfailed', request => errors.push(`${request.url()}: ${request.failure()?.errorText}`));
+
   const suffix = `${Date.now()}${Math.floor(Math.random() * 100000)}`;
   const segmentId = `seg-${suffix}`;
   const appId = `app-${suffix}`;
@@ -32,10 +29,48 @@ test('creates and searches real inventory after signing in', async ({ page }) =>
   const application = await applicationResponse;
   expect(application.status()).toBe(201);
   expect((await application.json()).id).toBe(appId);
-  await expect(page.getByText(`Claims ${suffix}`)).toBeVisible();
+  await expect(page.getByText(`Claims ${suffix}`, { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: `Edit segment Segment ${suffix}`, exact: true }).click();
+  await page.getByLabel('Edit segment name').fill(`Renamed ${suffix}`);
+  const segmentUpdate = page.waitForResponse(r => r.url().endsWith(`/api/v1/segments/${segmentId}`) && r.request().method() === 'PATCH');
+  await page.getByRole('button', { name: 'Save segment', exact: true }).click();
+  expect((await segmentUpdate).status()).toBe(200);
+  await expect(page.getByText('Segment updated.')).toBeVisible();
+  await page.getByRole('button', { name: `Edit application Claims ${suffix}`, exact: true }).click();
+  await page.getByLabel('Edit application name').fill(`Updated claims ${suffix}`);
+  await page.getByLabel('Edit owner').fill('Updated quality team');
+  await page.getByLabel('Edit quality score (optional)').fill('87');
+  const appUpdate = page.waitForResponse(r => r.url().endsWith(`/api/v1/applications/${appId}`) && r.request().method() === 'PATCH');
+  await page.getByRole('button', { name: 'Save application', exact: true }).click();
+  const updated = await appUpdate;
+  expect(updated.status()).toBe(200);
+  expect(await updated.json()).toMatchObject({ id: appId, name: `Updated claims ${suffix}`, owner: 'Updated quality team', qualityScore: 87 });
+  await expect(page.getByText('Application updated.')).toBeVisible();
   await page.reload();
   await page.getByLabel('Search applications').fill(appId);
-  await expect(page.getByText(`Claims ${suffix}`)).toBeVisible();
-  await expect(page.getByText(/Quality score: Unavailable/).filter({ hasText: appId })).toBeVisible();
-  expect(errors).toEqual([]);
+  await expect(page.getByRole('region', { name: 'Inventory', exact: true }).getByText(`Renamed ${suffix} (${segmentId})`, { exact: true })).toBeVisible();
+  await expect(page.getByText(`Updated claims ${suffix}`, { exact: true })).toBeVisible();
+  await expect(page.getByText(/Quality score: 87/).filter({ hasText: appId })).toContainText('Updated quality team');
+});
+
+test('duplicate segment identifiers show a conflict without replacing the original', async ({ page, browserErrors }) => {
+  const id = `duplicate-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+  await page.goto('/');
+  await page.getByLabel('Email').fill(process.env.E2E_EMAIL || 'admin@example.test');
+  await page.getByLabel('Password').fill(process.env.E2E_PASSWORD || 'local-development-password');
+  await page.getByRole('button', { name: 'Sign in' }).click();
+  await page.getByLabel('Segment ID').fill(id);
+  await page.getByLabel('Segment name').fill('Original duplicate test');
+  await page.getByRole('button', { name: 'Create segment' }).click();
+  await expect(page.getByText('Segment created.')).toBeVisible();
+  await page.getByLabel('Segment ID').fill(id);
+  await page.getByLabel('Segment name').fill('Replacement duplicate test');
+  browserErrors.expectHttpError('POST', '/api/v1/segments', 409);
+  const conflict = page.waitForResponse(r => r.url().endsWith('/api/v1/segments') && r.request().method() === 'POST');
+  await page.getByRole('button', { name: 'Create segment' }).click();
+  expect((await conflict).status()).toBe(409);
+  await expect(page.getByRole('alert')).toContainText('Segment identifier already exists');
+  await page.reload();
+  await expect(page.getByRole('region', { name: 'Inventory', exact: true }).getByText(`Original duplicate test (${id})`, { exact: true })).toBeVisible();
+  await expect(page.getByText(`Replacement duplicate test (${id})`)).toHaveCount(0);
 });

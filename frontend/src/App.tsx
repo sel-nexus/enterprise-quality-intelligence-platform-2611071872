@@ -49,7 +49,13 @@ export default function App() {
   }
 
   if (loading) return <main className="state" role="status">Loading your session…</main>;
-  if (error) return <main className="state"><p role="alert">{error}</p><button onClick={() => setRetry(value => value + 1)}>Retry</button><button className="secondary" onClick={signOut}>Sign out</button></main>;
+  if (error) return (
+    <main className="state">
+      <p role="alert">{error}</p>
+      <button onClick={() => setRetry(value => value + 1)}>Retry</button>
+      <button className="secondary" onClick={signOut}>Sign out</button>
+    </main>
+  );
   if (!token || !user) return <Login onLogin={signedIn} />;
   return (
     <div className="app-shell">
@@ -63,10 +69,24 @@ export default function App() {
       <main className="workspace">
         <p className="eyebrow">Your workspace</p>
         <h1>Welcome to EQIP</h1>
-        <p>Signed in as <strong>{user.email}</strong></p>
+        <p>
+          Signed in as <strong>{user.email}</strong>
+        </p>
         <dl>
-          <div><dt>Access role</dt><dd>{user.role}</dd></div>
-          <div><dt>Access scope</dt><dd>{user.role === 'admin' || user.role === 'executive' ? 'Enterprise-wide' : user.segments.length ? `Assigned: ${user.segments.join(', ')}` : 'No segments assigned'}</dd></div>
+          <div>
+            <dt>Access role</dt>
+            <dd>{user.role}</dd>
+          </div>
+          <div>
+            <dt>Access scope</dt>
+            <dd>
+              {user.role === 'admin' || user.role === 'executive'
+                ? 'Enterprise-wide'
+                : user.segments.length
+                  ? `Assigned: ${user.segments.join(', ')}`
+                  : 'No segments assigned'}
+            </dd>
+          </div>
         </dl>
         <p className="notice">Development identity is active.</p>
         <Overview token={token} user={user} />

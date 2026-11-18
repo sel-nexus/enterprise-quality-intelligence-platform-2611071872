@@ -44,14 +44,25 @@ describe('inventory overview', () => {
 
   it('downloads the response for an executive', async () => {
     vi.spyOn(globalThis, 'fetch').mockImplementation(async url => String(url).endsWith('.csv') ? new Response('csv data', { status: 200 }) : json(report));
-    const create = vi.fn(() => 'blob:report');
+    const create = vi.fn((_blob: Blob) => 'blob:report');
     const revoke = vi.fn();
     vi.stubGlobal('URL', { createObjectURL: create, revokeObjectURL: revoke });
-    const click = vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(() => {});
+    let filename = '';
+    let href = '';
+    const click = vi.spyOn(HTMLAnchorElement.prototype, 'click').mockImplementation(function (this: HTMLAnchorElement) { filename = this.download; href = this.href; });
     render(<Overview token="session" user={{ ...admin, role: 'executive' }} />);
     await screen.findByText('Alpha (a): 2');
     await userEvent.setup().click(screen.getByRole('button', { name: 'Export applications CSV' }));
     expect(create).toHaveBeenCalledOnce();
+    const text = await new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result));
+      reader.onerror = () => reject(reader.error);
+      reader.readAsText(create.mock.calls[0][0]);
+    });
+    expect(text).toBe('csv data');
+    expect(filename).toBe('applications.csv');
+    expect(href).toBe('blob:report');
     expect(click).toHaveBeenCalledOnce();
     expect(revoke).toHaveBeenCalledWith('blob:report');
     vi.unstubAllGlobals();

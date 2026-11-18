@@ -392,7 +392,7 @@
       "label": "HealthController",
       "file_type": "code",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -421,7 +421,7 @@
       "label": ".health()",
       "file_type": "code",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L17",
+      "source_location": "L19",
       "_callable": true,
       "_origin": "ast",
       "community": 11
@@ -431,7 +431,7 @@
       "label": "AppModule",
       "file_type": "code",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -1191,6 +1191,185 @@
       "community": 2
     },
     {
+      "id": "backend_src_reports_reports_controller",
+      "label": "reports.controller.ts",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_reportscontroller",
+      "label": "ReportsController",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "reports": "ReportsService"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_ts_controller",
+      "label": "Controller",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_ts_useguards",
+      "label": "UseGuards",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_ts_inject",
+      "label": "Inject",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_ts_get",
+      "label": "Get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_ts_req",
+      "label": "Req",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "header",
+      "label": "Header",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "label": ".overview()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "label": ".csv()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service",
+      "label": "reports.service.ts",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_overview",
+      "label": "Overview",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_csvcell",
+      "label": "csvCell()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L15",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_reportsservice",
+      "label": "ReportsService",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L23",
+      "_callable": true,
+      "_callable_class": true,
+      "_ts_fields": {
+        "inventory": "InventoryService"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_ts_injectable",
+      "label": "Injectable",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_ts_inject",
+      "label": "Inject",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_reportsservice_constructor",
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_reportsservice_overview",
+      "label": ".overview()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "label": ".applicationsCsv()",
+      "file_type": "code",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_users_users_controller",
       "label": "users.controller.ts",
       "file_type": "code",
@@ -1580,6 +1759,31 @@
       "community": 3
     },
     {
+      "id": "backend_test_reports_spec",
+      "label": "reports.spec.ts",
+      "file_type": "code",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_test_reports_spec_directory",
+      "label": "directory",
+      "file_type": "code",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_test_reports_spec_auth",
+      "label": "auth()",
+      "file_type": "code",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_test_users_spec",
       "label": "users.spec.ts",
       "file_type": "code",
@@ -1769,6 +1973,14 @@
       "label": "inventory.spec.ts",
       "file_type": "code",
       "source_file": "frontend/e2e/inventory.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_overview_spec",
+      "label": "overview.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/overview.spec.ts",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -2219,11 +2431,30 @@
       "_origin": "ast"
     },
     {
+      "id": "frontend_src_api_overviewreport",
+      "label": "OverviewReport",
+      "file_type": "code",
+      "source_file": "frontend/src/api.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_api_downloadapplicationscsv",
+      "label": "downloadApplicationsCsv()",
+      "file_type": "code",
+      "source_file": "frontend/src/api.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_api_inventoryrequest",
       "label": "inventoryRequest()",
       "file_type": "code",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L11",
+      "source_location": "L22",
       "_callable": true,
       "_origin": "ast"
     },
@@ -2232,7 +2463,7 @@
       "label": "login()",
       "file_type": "code",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L21",
+      "source_location": "L32",
       "_callable": true,
       "_origin": "ast",
       "community": 4
@@ -2242,7 +2473,7 @@
       "label": "currentUser()",
       "file_type": "code",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L30",
+      "source_location": "L41",
       "_callable": true,
       "_origin": "ast",
       "community": 4
@@ -2261,7 +2492,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "_callable": true,
       "_origin": "ast",
       "community": 4
@@ -2271,7 +2502,7 @@
       "label": "signedIn()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L36",
+      "source_location": "L37",
       "_callable": true,
       "_origin": "ast",
       "community": 4
@@ -2281,7 +2512,7 @@
       "label": "signOut()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L43",
+      "source_location": "L44",
       "_callable": true,
       "_origin": "ast",
       "community": 4
@@ -2448,6 +2679,65 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 4
+    },
+    {
+      "id": "frontend_src_reports_overview_test",
+      "label": "Overview.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview_test_admin",
+      "label": "admin",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview_test_report",
+      "label": "report",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview_test_json",
+      "label": "json()",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview",
+      "label": "Overview.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview_overview",
+      "label": "Overview()",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_reports_overview_overview_exportcsv",
+      "label": "exportCsv()",
+      "file_type": "code",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
     },
     {
       "id": "frontend_src_users_users_test",
@@ -3305,11 +3595,55 @@
     },
     {
       "source": "backend_src_app_module",
+      "target": "backend_src_reports_reports_controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.module.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_module",
+      "target": "backend_src_reports_reports_controller_reportscontroller",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.module.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_module",
+      "target": "backend_src_reports_reports_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.module.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_module",
+      "target": "backend_src_reports_reports_service_reportsservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.module.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_module",
       "target": "backend_src_app_module_healthcontroller",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3319,7 +3653,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -3330,7 +3664,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -3341,7 +3675,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3351,7 +3685,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3361,7 +3695,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -4773,6 +5107,382 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_reports_reports_controller",
+      "target": "ref_nestjs_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_auth_auth_guard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_auth_auth_guard_authguard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_auth_auth_guard_authenticatedrequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_reports_reports_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_reports_reports_service_overview",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_reports_reports_service_reportsservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller",
+      "target": "backend_src_reports_reports_controller_reportscontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller",
+      "target": "backend_src_reports_reports_controller_ts_controller",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller",
+      "target": "backend_src_reports_reports_controller_ts_useguards",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "target": "backend_src_reports_reports_controller_ts_inject",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "target": "backend_src_reports_reports_controller_ts_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "target": "backend_src_reports_reports_controller_ts_req",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "backend_src_reports_reports_controller_ts_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "header",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "header",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "header",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "backend_src_reports_reports_controller_ts_req",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller",
+      "target": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller",
+      "target": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller",
+      "target": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "ref_nestjs_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_auth_auth_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_auth_auth_service_authuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_inventory_inventory_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_inventory_inventory_service_inventoryservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_reports_reports_service_overview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_reports_reports_service_csvcell",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service",
+      "target": "backend_src_reports_reports_service_reportsservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice",
+      "target": "backend_src_reports_reports_service_ts_injectable",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_constructor",
+      "target": "backend_src_reports_reports_service_ts_inject",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice",
+      "target": "backend_src_reports_reports_service_reportsservice_constructor",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice",
+      "target": "backend_src_reports_reports_service_reportsservice_overview",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice",
+      "target": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "target": "backend_src_reports_reports_service_csvcell",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_users_users_controller",
       "target": "ref_nestjs_common",
       "relation": "imports_from",
@@ -5811,6 +6521,159 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_test_reports_spec",
+      "target": "ref_reflect_metadata",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "ref_nestjs_testing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "ref_nestjs_common",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "ref_supertest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "ref_jsonwebtoken",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_app_module",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_app_module_appmodule",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_database_database",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_reports_reports_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_src_reports_reports_service_reportsservice",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_test_reports_spec_directory",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_test_reports_spec_auth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_test_reports_spec",
+      "target": "backend_test_reports_spec_auth",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/test/reports.spec.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_test_users_spec",
       "target": "ref_reflect_metadata",
       "relation": "imports_from",
@@ -6130,6 +6993,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/e2e/inventory.spec.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_overview_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/overview.spec.ts",
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast"
@@ -6622,11 +7496,31 @@
     },
     {
       "source": "frontend_src_api",
+      "target": "frontend_src_api_overviewreport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api",
+      "target": "frontend_src_api_downloadapplicationscsv",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/api.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_api",
       "target": "frontend_src_api_inventoryrequest",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L11",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6636,7 +7530,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L21",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6646,7 +7540,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/api.ts",
-      "source_location": "L30",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6696,19 +7590,8 @@
     },
     {
       "source": "frontend_src_app",
-      "target": "frontend_src_api",
+      "target": "frontend_src_reports_overview",
       "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast"
-    },
-    {
-      "source": "frontend_src_app",
-      "target": "frontend_src_api_currentuser",
-      "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
@@ -6724,6 +7607,28 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
       "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_api_currentuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L8",
       "weight": 1.0,
       "type_only": true,
       "_origin": "ast"
@@ -6735,7 +7640,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6746,7 +7651,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6756,7 +7661,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6766,7 +7671,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6776,7 +7681,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7200,6 +8105,212 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/main.tsx",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "ref_testing_library_jest_dom",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_api_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview_test_admin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview_test_report",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview_test_json",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview_test_json",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api_downloadapplicationscsv",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api_inventoryrequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api_overviewreport",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_api_user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview",
+      "target": "frontend_src_reports_overview_overview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_overview",
+      "target": "frontend_src_reports_overview_overview_exportcsv",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7636,6 +8747,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app",
+      "target": "frontend_src_reports_overview_overview",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_auth_login_test",
       "target": "frontend_src_auth_login_login",
       "relation": "imports",
@@ -7669,6 +8791,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_reports_overview_test",
+      "target": "frontend_src_reports_overview_overview",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_users_users_test",
       "target": "frontend_src_users_users_users",
       "relation": "imports",
@@ -7686,7 +8819,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7709,6 +8842,28 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/inventory/Inventory.tsx",
       "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_overview",
+      "target": "frontend_src_api_inventoryrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_overview",
+      "target": "frontend_src_api_downloadapplicationscsv",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8043,6 +9198,83 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_reports_reports_controller_reportscontroller_constructor",
+      "target": "backend_src_reports_reports_service_reportsservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "target": "backend_src_auth_auth_guard_authenticatedrequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "target": "backend_src_reports_reports_service_overview",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "backend_src_auth_auth_guard_authenticatedrequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_constructor",
+      "target": "backend_src_inventory_inventory_service_inventoryservice",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_overview",
+      "target": "backend_src_auth_auth_service_authuser",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "target": "backend_src_auth_auth_service_authuser",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_users_users_controller_userscontroller_constructor",
       "target": "backend_src_users_users_service_usersservice",
       "relation": "references",
@@ -8259,7 +9491,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L52",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_app",
+      "target": "frontend_src_reports_overview_overview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8271,7 +9515,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L71",
+      "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8283,7 +9527,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L72",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8296,6 +9540,18 @@
       "confidence_score": 1.0,
       "source_file": "frontend/src/auth/Login.tsx",
       "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_reports_overview_overview_exportcsv",
+      "target": "frontend_src_api_downloadapplicationscsv",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/reports/Overview.tsx",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8396,6 +9652,66 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_reports_reports_controller_reportscontroller_overview",
+      "target": "backend_src_reports_reports_service_reportsservice_overview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_controller_reportscontroller_csv",
+      "target": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_overview",
+      "target": "backend_src_inventory_inventory_service_inventoryservice_segments",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_overview",
+      "target": "backend_src_inventory_inventory_service_inventoryservice_applications",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_reports_reports_service_reportsservice_applicationscsv",
+      "target": "backend_src_inventory_inventory_service_inventoryservice_applications",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/reports/reports.service.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_users_users_controller_userscontroller_list",
       "target": "backend_src_users_users_service_usersservice_list",
       "relation": "calls",
@@ -8449,7 +9765,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.module.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -8557,8 +9873,8 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_applications",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_applications"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -8570,8 +9886,8 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_createapplication",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_createapplication"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -8583,8 +9899,8 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_createsegment",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_createsegment"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -8596,8 +9912,8 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_segments",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_segments"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -8609,8 +9925,8 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication",
-      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication"
     },
     {
       "source": "backend_src_auth_auth_guard_authenticatedrequest",
@@ -8622,7 +9938,59 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment",
+      "_src": "backend_src_auth_auth_guard_authenticatedrequest",
+      "_tgt": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_users_users_controller_userscontroller_audit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_audit",
+      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_users_users_controller_userscontroller_create",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_create",
+      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_users_users_controller_userscontroller_list",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_list",
+      "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
+    },
+    {
+      "source": "backend_src_auth_auth_guard_authenticatedrequest",
+      "target": "backend_src_users_users_controller_userscontroller_update",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_update",
       "_tgt": "backend_src_auth_auth_guard_authenticatedrequest"
     },
     {
@@ -8648,8 +10016,8 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_admin",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_admin"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8661,8 +10029,8 @@
       "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_applications",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_applications"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8674,8 +10042,8 @@
       "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_createapplication",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_createapplication"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8687,8 +10055,8 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_createsegment",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_createsegment"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8700,8 +10068,8 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_segments",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_segments"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8713,8 +10081,8 @@
       "source_location": "L83",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_updateapplication",
-      "_tgt": "backend_src_auth_auth_service_authuser"
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_updateapplication"
     },
     {
       "source": "backend_src_auth_auth_service_authuser",
@@ -8726,7 +10094,85 @@
       "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_updatesegment",
+      "_src": "backend_src_auth_auth_service_authuser",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_updatesegment"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_admin",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_admin",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_audit",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_audit",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_create",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_create",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_history",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_history",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_list",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_list",
+      "_tgt": "backend_src_auth_auth_service_authuser"
+    },
+    {
+      "source": "backend_src_auth_auth_service_authuser",
+      "target": "backend_src_users_users_service_usersservice_update",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_update",
       "_tgt": "backend_src_auth_auth_service_authuser"
     },
     {
@@ -8743,6 +10189,19 @@
       "_tgt": "backend_src_auth_auth_service_ts_inject"
     },
     {
+      "source": "backend_src_database_userrecord",
+      "target": "backend_src_users_users_service_usersservice_publicuser",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_publicuser",
+      "_tgt": "backend_src_database_userrecord"
+    },
+    {
       "source": "backend_src_database_database",
       "target": "backend_src_inventory_inventory_service_inventoryservice_constructor",
       "relation": "references",
@@ -8752,7 +10211,20 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_src_inventory_inventory_service_inventoryservice_constructor",
+      "_src": "backend_src_database_database",
+      "_tgt": "backend_src_inventory_inventory_service_inventoryservice_constructor"
+    },
+    {
+      "source": "backend_src_database_database",
+      "target": "backend_src_users_users_service_usersservice_constructor",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_constructor",
       "_tgt": "backend_src_database_database"
     },
     {
@@ -8951,6 +10423,58 @@
       "_tgt": "backend_src_inventory_inventory_controller_ts_body"
     },
     {
+      "source": "backend_src_inventory_inventory_controller_ts_patch",
+      "target": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/inventory/inventory.controller.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication",
+      "_tgt": "backend_src_inventory_inventory_controller_ts_patch"
+    },
+    {
+      "source": "backend_src_inventory_inventory_controller_ts_patch",
+      "target": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/inventory/inventory.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment",
+      "_tgt": "backend_src_inventory_inventory_controller_ts_patch"
+    },
+    {
+      "source": "backend_src_inventory_inventory_controller_ts_param",
+      "target": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/inventory/inventory.controller.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updateapplication",
+      "_tgt": "backend_src_inventory_inventory_controller_ts_param"
+    },
+    {
+      "source": "backend_src_inventory_inventory_controller_ts_param",
+      "target": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/inventory/inventory.controller.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_inventory_inventory_controller_inventorycontroller_updatesegment",
+      "_tgt": "backend_src_inventory_inventory_controller_ts_param"
+    },
+    {
       "source": "backend_src_inventory_inventory_service_ts_inject",
       "target": "backend_src_inventory_inventory_service_inventoryservice_constructor",
       "relation": "references",
@@ -8962,6 +10486,175 @@
       "_origin": "ast",
       "_src": "backend_src_inventory_inventory_service_inventoryservice_constructor",
       "_tgt": "backend_src_inventory_inventory_service_ts_inject"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_inject",
+      "target": "backend_src_users_users_controller_userscontroller_constructor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_constructor",
+      "_tgt": "backend_src_users_users_controller_ts_inject"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_get",
+      "target": "backend_src_users_users_controller_userscontroller_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_audit",
+      "_tgt": "backend_src_users_users_controller_ts_get"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_get",
+      "target": "backend_src_users_users_controller_userscontroller_list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_list",
+      "_tgt": "backend_src_users_users_controller_ts_get"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_req",
+      "target": "backend_src_users_users_controller_userscontroller_audit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_audit",
+      "_tgt": "backend_src_users_users_controller_ts_req"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_req",
+      "target": "backend_src_users_users_controller_userscontroller_create",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_create",
+      "_tgt": "backend_src_users_users_controller_ts_req"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_req",
+      "target": "backend_src_users_users_controller_userscontroller_list",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_list",
+      "_tgt": "backend_src_users_users_controller_ts_req"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_req",
+      "target": "backend_src_users_users_controller_userscontroller_update",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_update",
+      "_tgt": "backend_src_users_users_controller_ts_req"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_post",
+      "target": "backend_src_users_users_controller_userscontroller_create",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_create",
+      "_tgt": "backend_src_users_users_controller_ts_post"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_body",
+      "target": "backend_src_users_users_controller_userscontroller_create",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_create",
+      "_tgt": "backend_src_users_users_controller_ts_body"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_body",
+      "target": "backend_src_users_users_controller_userscontroller_update",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_update",
+      "_tgt": "backend_src_users_users_controller_ts_body"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_patch",
+      "target": "backend_src_users_users_controller_userscontroller_update",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_update",
+      "_tgt": "backend_src_users_users_controller_ts_patch"
+    },
+    {
+      "source": "backend_src_users_users_controller_ts_param",
+      "target": "backend_src_users_users_controller_userscontroller_update",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.controller.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_controller_userscontroller_update",
+      "_tgt": "backend_src_users_users_controller_ts_param"
+    },
+    {
+      "source": "backend_src_users_users_service_ts_inject",
+      "target": "backend_src_users_users_service_usersservice_constructor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/users/users.service.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_src_users_users_service_usersservice_constructor",
+      "_tgt": "backend_src_users_users_service_ts_inject"
     },
     {
       "source": "frontend_src_api_session",
@@ -8979,10 +10672,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-18T12:03:25.961237+00:00",
+    "built_at": "2026-11-18T13:00:40.324981+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000418112611071872\\developer",
     "force": true,
-    "files_scanned": 33
+    "files_scanned": 39
   }
 }

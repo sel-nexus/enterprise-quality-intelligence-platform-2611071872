@@ -23,6 +23,8 @@ export default function Inventory({ token, user }: { token: string; user: User }
   const [owner, setOwner] = useState('');
   const [lifecycle, setLifecycle] = useState('');
   const [criticality, setCriticality] = useState('');
+  const [editSegment, setEditSegment] = useState<Segment | null>(null);
+  const [editApp, setEditApp] = useState<Application | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -56,26 +58,144 @@ export default function Inventory({ token, user }: { token: string; user: User }
     finally { setBusy(false); }
   }
 
+  /** Save a segment name using the administrator endpoint. */
+  async function updateSegment(event: FormEvent) {
+    event.preventDefault();
+    if (!editSegment || user.role !== 'admin') return;
+    setBusy(true); setError(''); setMessage('');
+    try {
+      const saved = await inventoryRequest<Segment>(token, `segments/${encodeURIComponent(editSegment.id)}`, 'PATCH', { name: editSegment.name });
+      setSegments(items => items.map(item => item.id === saved.id ? saved : item));
+      setEditSegment(null); setMessage('Segment updated.');
+    } catch (err) { setError(err instanceof Error ? err.message : 'Unable to update segment'); }
+    finally { setBusy(false); }
+  }
+
+  /** Save mutable application fields using the administrator endpoint. */
+  async function updateApplication(event: FormEvent) {
+    event.preventDefault();
+    if (!editApp || user.role !== 'admin') return;
+    setBusy(true); setError(''); setMessage('');
+    try {
+      const { id, name, segmentId, owner, lifecycle, criticality, qualityScore } = editApp;
+      const saved = await inventoryRequest<Application>(token, `applications/${encodeURIComponent(id)}`, 'PATCH', { name, segmentId, owner, lifecycle, criticality, qualityScore });
+      setApplications(items => items.map(item => item.id === saved.id ? saved : item));
+      setEditApp(null); setMessage('Application updated.');
+    } catch (err) { setError(err instanceof Error ? err.message : 'Unable to update application'); }
+    finally { setBusy(false); }
+  }
+
   const filtered = applications.filter(app => [app.id, app.name, app.owner, app.segmentId].some(value => value.toLowerCase().includes(search.toLowerCase())));
   return (
     <section aria-labelledby="inventory-title">
       <h2 id="inventory-title">Inventory</h2>
       <p>{user.role === 'admin' || user.role === 'executive' ? 'Enterprise-wide inventory access.' : 'Showing inventory for your assigned segments only.'}</p>
       {loading && <p role="status">Loading inventory…</p>}
-      {error && <div role="alert"><p className="error">{error}</p>{loadFailed && !loading && <button className="secondary" onClick={() => setRetry(value => value + 1)}>Retry loading</button>}</div>}
+      {error && (
+        <div role="alert">
+          <p className="error">{error}</p>
+          {loadFailed && !loading && (
+            <button className="secondary" onClick={() => setRetry(value => value + 1)}>Retry loading</button>
+          )}
+        </div>
+      )}
       {message && <p role="status">{message}</p>}
       {!loading && !loadFailed && (
         <>
           <h3>Segments</h3>
-          {segments.length ? <ul>{segments.map(segment => <li key={segment.id}>{segment.name} ({segment.id})</li>)}</ul> : <p>No accessible segments.</p>}
+          {segments.length ? (
+            <ul>
+              {segments.map(segment => (
+                <li key={segment.id}>
+                  <span>{segment.name} ({segment.id})</span>
+                  {user.role === 'admin' && (
+                    <button
+                      type="button"
+                      className="secondary"
+                      disabled={busy}
+                      onClick={() => { setEditSegment({ ...segment }); setEditApp(null); setError(''); setMessage(''); }}
+                    >
+                      Edit segment {segment.name}
+                    </button>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : <p>No accessible segments.</p>}
           <h3>Applications</h3>
           <label htmlFor="inventory-search">Search applications</label>
           <input id="inventory-search" value={search} onChange={event => setSearch(event.target.value)} />
-          {filtered.length ? <ul>{filtered.map(app => <li key={app.id}><strong>{app.name}</strong> ({app.id}) — {app.segmentId} · {app.owner} · {app.lifecycle} · {app.criticality} · Quality score: {app.qualityScore ?? 'Unavailable'}</li>)}</ul> : <p>No applications found.</p>}
+          {filtered.length ? (
+            <ul>
+              {filtered.map(app => (
+                <li key={app.id}>
+                  <strong>{app.name}</strong> ({app.id}) — {app.segmentId} · {app.owner} · {app.lifecycle} ·{' '}
+                  {app.criticality} · Quality score: {app.qualityScore ?? 'Unavailable'}
+                  {user.role === 'admin' && (
+                    <button
+                      type="button"
+                      className="secondary"
+                      disabled={busy}
+                      onClick={() => { setEditApp({ ...app }); setEditSegment(null); setError(''); setMessage(''); }}
+                    >
+                      Edit application {app.name}
+                    </button>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : <p>No applications found.</p>}
         </>
       )}
       {user.role === 'admin' && !loading && !loadFailed && (
         <>
+          {editSegment && <form onSubmit={updateSegment} aria-labelledby="edit-segment-title">
+            <h3 id="edit-segment-title">Edit segment {editSegment.id}</h3>
+            <label htmlFor="edit-segment-name">Edit segment name</label>
+            <input
+              id="edit-segment-name" required aria-required="true" maxLength={200}
+              value={editSegment.name} onChange={event => setEditSegment({ ...editSegment, name: event.target.value })}
+            />
+            <button disabled={busy}>Save segment</button>
+            <button type="button" className="secondary" disabled={busy} onClick={() => setEditSegment(null)}>Cancel segment edit</button>
+          </form>}
+          {editApp && <form onSubmit={updateApplication} aria-labelledby="edit-app-title">
+            <h3 id="edit-app-title">Edit application {editApp.id}</h3>
+            <label htmlFor="edit-app-name">Edit application name</label>
+            <input
+              id="edit-app-name" required aria-required="true" maxLength={200}
+              value={editApp.name} onChange={event => setEditApp({ ...editApp, name: event.target.value })}
+            />
+            <label htmlFor="edit-app-segment">Edit application segment</label>
+            <select
+              id="edit-app-segment" required aria-required="true" value={editApp.segmentId}
+              onChange={event => setEditApp({ ...editApp, segmentId: event.target.value })}
+            >
+              {segments.map(segment => <option key={segment.id} value={segment.id}>{segment.name}</option>)}
+            </select>
+            <label htmlFor="edit-app-owner">Edit owner</label>
+            <input
+              id="edit-app-owner" required aria-required="true" maxLength={200}
+              value={editApp.owner} onChange={event => setEditApp({ ...editApp, owner: event.target.value })}
+            />
+            <label htmlFor="edit-app-lifecycle">Edit lifecycle</label>
+            <input
+              id="edit-app-lifecycle" required aria-required="true" maxLength={200}
+              value={editApp.lifecycle} onChange={event => setEditApp({ ...editApp, lifecycle: event.target.value })}
+            />
+            <label htmlFor="edit-app-criticality">Edit criticality</label>
+            <input
+              id="edit-app-criticality" required aria-required="true" maxLength={200}
+              value={editApp.criticality} onChange={event => setEditApp({ ...editApp, criticality: event.target.value })}
+            />
+            <label htmlFor="edit-app-score">Edit quality score (optional)</label>
+            <input
+              id="edit-app-score" type="number" min="0" max="100" step="any" value={editApp.qualityScore ?? ''}
+              onChange={event => setEditApp({ ...editApp, qualityScore: event.target.value === '' ? null : Number(event.target.value) })}
+            />
+            <button disabled={busy}>Save application</button>
+            <button type="button" className="secondary" disabled={busy} onClick={() => setEditApp(null)}>Cancel application edit</button>
+          </form>}
           <form onSubmit={createSegment}>
             <h3>Create segment</h3>
             <label htmlFor="segment-id">Segment ID</label>

@@ -7,6 +7,6 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     server: { port: 5173, proxy: { '/api': env.VITE_PROXY_TARGET || 'http://localhost:3000' } },
-    test: { environment: 'jsdom', include: ['src/**/*.test.tsx'] },
+    test: { environment: 'jsdom', include: ['src/**/*.test.{ts,tsx}'] },
   };
 });
